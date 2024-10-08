@@ -1,0 +1,81 @@
+/* Bagian background */
+.birthday-background {
+    background-color: rgb(255, 200, 245); /* Background warna pink */
+    padding: 40px 20px;
+    margin-top: 120px;
+}
+
+/* Teks H1 dan garis di tengah */
+.birthday-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menempatkan teks dan garis di tengah */
+    position: relative;
+}
+
+.birthday-title-wrapper h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0 20px; /* Spasi antara teks dan garis */
+}
+
+.birthday-title-wrapper::before,
+.birthday-title-wrapper::after {
+    content: '';
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #ff00c3; /* Warna garis */
+}
+
+/* Teks paragraf dan garis vertikal di sebelah kiri */
+.birthday-text-description {
+    padding-top: 20px; /* Jarak antara judul dan deskripsi */
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+    border-left: 4px solid #ff00c3; /* Garis vertikal di kiri */
+    padding-left: 15px;
+    margin-left: 0; /* Hilangkan margin kiri */
+    max-width: 100%; /* Pastikan lebar penuh */
+    position: relative;
+    left: -10px; /* Agar teks mentok ke kiri */
+}
+
+/* Media Query untuk layar tablet */
+@media (max-width: 768px) {
+    .birthday-background {
+        padding: 15px;
+    }
+
+    .birthday-title-wrapper h1 {
+        font-size: 1.75rem;
+    }
+
+    .birthday-text-description {
+        font-size: 1.125rem;
+        left: 0; /* Sesuaikan untuk tablet */
+    }
+}
+
+/* Media Query untuk layar mobile */
+@media (max-width: 480px) {
+    .birthday-background {
+        padding: 10px;
+    }
+
+    .birthday-title-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .birthday-text-description {
+        font-size: 1rem;
+        left: 0; /* Sesuaikan untuk mobile */
+    }
+}
+
+
+

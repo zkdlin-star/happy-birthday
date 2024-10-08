@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Success</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 200, 245);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.success-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff53d7;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Batasi lebar maksimal container untuk responsif */
+    width: 90%; /* Pastikan lebar container fleksibel */
+    margin: 0 auto; /* Posisikan container di tengah pada layar kecil */
+}
+
+.success-container h1 {
+    color: black;
+    font-size: 2rem; /* Ukuran font besar untuk desktop */
+}
+
+.success-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.success-container a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #d325ab;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(166, 7, 140);
+}
+
+/* Tambahkan media query untuk membuat elemen responsif di layar mobile */
+@media (max-width: 768px) {
+    .success-container {
+        padding: 15px; /* Kurangi padding pada layar lebih kecil */
+    }
+
+    .success-container h1 {
+        font-size: 1.5rem; /* Kecilkan ukuran font pada layar lebih kecil */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Kurangi ukuran padding tombol */
+        font-size: 0.9rem; /* Kecilkan ukuran font tombol */
+    }
+}
+
+@media (max-width: 480px) {
+    .success-container {
+        padding: 10px; /* Kurangi lebih banyak padding untuk layar sangat kecil */
+    }
+
+    .success-container h1 {
+        font-size: 1.2rem; /* Kecilkan lagi ukuran font pada layar sangat kecil */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Sesuaikan padding tombol agar tidak terlalu besar di layar kecil */
+        font-size: 0.8rem; /* Kecilkan ukuran font tombol */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>PESAN BERHASIL DIKIRIM!!</h1>
+        <a href="index.html" class="btn get-started">Kembali Ke Beranda</a>
+    </div>
+</body>
+</html>

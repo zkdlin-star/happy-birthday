@@ -1,0 +1,140 @@
+.best-part {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    margin: 20px 30px; /* Margin atas dan bawah */
+}
+
+.best-part h1 {
+    margin: 0 20px; /* Margin kiri dan kanan untuk teks */
+    font-size: 24px;
+    font-weight: bold;
+    position: relative; /* Agar garis bisa diposisikan relatif terhadap h1 */
+}
+
+.best-part h1::before,
+.best-part h1::after {
+    content: '';
+    flex: 1; /* Garis mengambil sisa ruang */
+    border-top: 2px solid red; /* Garis merah */
+    margin: 0 10px; /* Margin di kiri dan kanan garis */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 60px;
+}
+
+.alumni-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+/* Swiper for alumni cards */
+.swiper-container {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    width: 250px;
+}
+
+.card-testimoni {
+    width: 100%;
+    height: 300px; /* Tentukan tinggi tetap untuk card */
+    padding: 0;
+    background: rgb(255, 200, 245);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    display: flex; /* Flexbox untuk meratakan konten di dalam card */
+    justify-content: center; /* Meratakan gambar secara horizontal */
+    align-items: center; /* Meratakan gambar secara vertikal */
+}
+
+.card-testimoni .image-testimoni img {
+    width: 100%; /* Gambar mengisi lebar card */
+    height: 100%; /* Gambar mengisi tinggi card */
+    object-fit: cover; /* Menjaga rasio gambar tetap proporsional, memotong bagian yang tidak sesuai */
+    border-radius: 10px; /* Beri sudut melengkung kecil pada gambar */
+}
+
+/* Efek blur pada slide */
+.swiper-slide-prev-prev,
+.swiper-slide-next-next {
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .best-part {
+        flex-direction: column; /* Mengubah arah menjadi kolom */
+        margin: 10px; /* Mengurangi margin untuk tampilan mobile */
+    }
+
+    .best-part h1 {
+        font-size: 20px; /* Mengurangi ukuran font pada mobile */
+    }
+
+    .swiper-container {
+        width: 100%; /* Mengubah lebar swiper pada mobile */
+        height: 300px; /* Menyesuaikan tinggi swiper */
+    }
+
+    .swiper-slide {
+        width: 200px; /* Menyesuaikan lebar slide pada mobile */
+    }
+
+    .card-testimoni {
+        height: 230px; /* Mengurangi tinggi card pada mobile */
+    }
+
+    .alumni-section {
+        padding: 30px; /* Mengurangi padding pada alumni section */
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    .best-part h1 {
+        font-size: 18px; /* Mengurangi ukuran font lebih kecil pada mobile kecil */
+    }
+
+    .swiper-container {
+        height: 200px; /* Mengurangi tinggi swiper lebih lanjut untuk ponsel kecil */
+    }
+
+    .swiper-slide {
+        width: 100%; /* Membuat slide penuh pada ponsel kecil */
+    }
+
+    .card-testimoni {
+        height: 200px; /* Mengurangi tinggi card lebih lanjut pada ponsel kecil */
+    }
+
+    .alumni-section {
+        padding: 20px; /* Mengurangi padding lebih lanjut untuk tampilan lebih kecil */
+    }
+}
+
+
+
+

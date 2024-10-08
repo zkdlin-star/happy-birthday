@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY AUL</title>
+    <link href="img/love.png" rel="icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.gif" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-active">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#musik">MUSIC</a></li>
+                <li><a href="#testimoni">BEST PART</a></li>
+                <li><a href="#pesan">PESAN</a></li>
+                <li><a href="#penutup">PENUTUP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="popup-animation">
+        <div class="hero-section">
+            <div class="content">
+                <h1 class="popup-text">How to say<br>Happy Birthday To<br>Salsabila Aulia N.Z</h1>
+                <section class="popup-animation">
+                <p>This is how Dimas express love. In the meantime you will understand how my brain works As you see this, Dimas want to say happy birthday to Salasbila Aulia Nur Zahra.</p> 
+                </section>
+                <div class="buttons">
+                    <!-- Tombol Get Started untuk scroll ke bagian lain -->
+                    <a href="#about" class="btn get-started">Scroll This</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--about-->
+    <section id="about" class="about-us popup-on-scroll">
+        <div class="main-content">
+            <div class="text-content">
+                <div class="title-wrapper">
+                    <h1>TODAY IS YOUR</h1>
+                    <span class="birthday-text">BIRTHDAY</span>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="image-content">
+                    <img src="img/aul-heroimage.png" alt="Image">
+                </div>
+    
+                <div class="text-description">
+                    <p>Hi Aul,</p>
+    
+                    <p>I've been thinking about what I want to write for your birthday, and there are a few things I want to share with you. Even though we don't know each other very well, I remember you once said that we are friends.</p>
+                    <p>Selamat ulang tahun Aull! Semoga di usia yang baru ini kamu selalu diberi kebahagiaan, kesehatan, dan kesuksesan dalam setiap langkahmu, semoga semua harapan dan cita-citamu tercapai. Jangan lupa untuk menikmati hari spesialmu ini yah!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--MUSIC-->
+<section id="musik" class="staf-pengajar">
+  <h1>HAPPY BIRTHDAY</h1>
+  <p>Tolong kamu pencet semua musiknya, itu bisa dipencet dan diputar juga musiknya.</p>
+  <div class="slider">
+    <div class="slide staf-card-container">
+        <div class="staf-card">
+            <img src="img/alexandra.webp" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal1', 'audio1')">
+            <h4>ALEXANDRA</h4>
+            <p>Reality Club</p>
+        </div>
+
+        <div class="staf-card">
+            <img src="img/anything.jpeg" alt="SALSABILA AULIA NURZAHRAo" onclick="openModal('modal2', 'audio2')">
+            <h4>ANYTHING YOU WANT</h4>
+            <p>Reality Club</p>
+        </div>
+
+        <div class="staf-card">
+            <img src="img/heavy.jpeg" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal3', 'audio3')">
+            <h4>HEAVY</h4>
+            <p>The Marias</p>
+        </div>
+
+        <div class="staf-card">
+            <img src="img/seasons.jpeg" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal4', 'audio4')">
+            <h4>SEASONS</h4>
+            <p>Wave To Earth</p>
+        </div>
+    </div>
+</div>
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+<div style="position: relative; display: inline-block;">
+  <button class="close" onclick="closeModal('modal1', 'audio1')">&times;</button>
+  <img src="img/salsabila.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+  <h4>ALEXANDRA</h4>
+  <p>Reality Club</p>
+</div>
+<audio id="audio1">
+  <source src="audio/alexandra.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+<div style="position: relative; display: inline-block;">
+  <button class="close" onclick="closeModal('modal2', 'audio2')">&times;</button>
+  <img src="img/Screenshot 2024-09-22 123507.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+  <h4>ANYTHING YOU WANT</h4>
+  <p>Reality Club</p>
+</div>
+<audio id="audio2">
+  <source src="audio/anything you want.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+<div style="position: relative; display: inline-block;">
+  <button class="close" onclick="closeModal('modal3', 'audio3')">&times;</button>
+  <img src="img/Screenshot 2024-09-22 123221.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+  <h4>Heavy</h4>
+  <p>The Marias</p>
+</div>
+<audio id="audio3">
+  <source src="audio/heavy.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 4 -->
+<div id="modal4" class="modal">
+<div style="position: relative; display: inline-block;">
+  <button class="close" onclick="closeModal('modal4', 'audio4')">&times;</button>
+  <img src="img/aul.png" alt="Ade Popon">
+</div>
+<div class="caption">
+  <h4>SEASONS</h4>
+  <p>Wave To Earth</p>
+</div>
+<audio id="audio4">
+  <source src="audio/seasons.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+
+<div class="slider">
+<div class="slide staf-card-container">
+    <div class="staf-card">
+        <img src="img/why can't I.webp" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal5', 'audio5')">
+        <h4>WHY CAN'T I</h4>
+        <p> Nathaniel Constantin</p>
+    </div>
+
+    <div class="staf-card">
+      <img src="img/party anthem.jpg" alt="party anthem" onclick="openModal('modal6', 'audio6')">
+      <h4>NO 1 PARTY ANTHEM</h4>
+      <p>Artic Monkey</p>
+    </div>
+
+    <div class="staf-card">
+        <img src="img/margaret.jpeg" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal7', 'audio7')">
+        <h4>MARGARET</h4>
+        <p>Lana Del Rey</p>
+    </div>
+
+    <div class="staf-card">
+        <img src="img/niki.jpeg" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal8', 'audio8')">
+        <h4>TAKE A CHANCE WITH ME</h4>
+        <p>NIKI</p>
+    </div>
+</div>
+</div>
+</div>
+<!-- Modal 1 -->
+<div id="modal5" class="modal">
+<div style="position: relative; display: inline-block;">
+<button class="close" onclick="closeModal('modal5', 'audio5')">&times;</button>
+<img src="img/aul-heroimage.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+<h4>WHY CAN'T I</h4>
+<p> Nathaniel Constantin</p>
+</div>
+<audio id="audio5">
+<source src="audio/why cant i.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal6" class="modal">
+<div style="position: relative; display: inline-block;">
+<button class="close" onclick="closeModal('modal6', 'audio6')">&times;</button>
+<img src="img/aul-party-anthem.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+<h4>NO 1 PARTY ANTHEM</h4>
+<p>Artic Monkey</p>
+</div>
+<audio id="audio6">
+<source src="audio/PARTY.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal7" class="modal">
+<div style="position: relative; display: inline-block;">
+<button class="close" onclick="closeModal('modal7', 'audio7')">&times;</button>
+<img src="img/aul margaret.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+<h4>MARGARET</h4>
+<p>Lana Del Rey</p>
+</div>
+<audio id="audio7">
+<source src="audio/margaret.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<!-- Modal 4 -->
+<div id="modal8" class="modal">
+<div style="position: relative; display: inline-block;">
+<button class="close" onclick="closeModal('modal8', 'audio8')">&times;</button>
+<img src="img/aulniki.png" alt="SALSABILA AULIA NURZAHRA">
+</div>
+<div class="caption">
+  <h4>TAKE A CHANCE WITH ME</h4>
+  <p>NIKI</p>
+</div>
+<audio id="audio8">
+<source src="audio/niki.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<div class="slider">
+  <div class="slide staf-card-container">
+      <div class="staf-card">
+          <img src="img/love.png" alt="SALSABILA AULIA NURZAHRA" onclick="openModal('modal9', 'audio9')">
+          <h4>?</h4>
+          <p>Yang Ini Special</p>
+      </div>
+
+      <div id="modal9" class="modal">
+        <div style="position: relative; display: inline-block;">
+        <button class="close" onclick="closeModal('modal9', 'audio9')">&times;</button>
+        <img src="img/aul yalal yalili.png" alt="SALSABILA AULIA NURZAHRA">
+        </div>
+        <div class="caption">
+        <h4>MAA SYAA ALLAH</h4>
+        </div>
+        <audio id="audio9">
+        <source src="audio/yali yalili.mpeg" type="audio/mp3">
+        Your browser does not support the audio element.
+        </audio>
+        </div>
+</section>
+
+<!--BEST PART-->
+<section id="testimoni" class="testimoni popup-on-scroll"></section>
+<section id="best-part" class="best-part popup-on-scroll">
+  <h1>BEST PART</h1>
+</section>
+    <!-- Heading with lines on the sides -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="card-testimoni">
+                    <div class="image-testimoni">
+                        <img src="img/follow.png" alt="Alumni 1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="card-testimoni">
+                    <div class="image-testimoni">
+                        <img src="img/best2.png" alt="Alumni 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="card-testimoni">
+                    <div class="image-testimoni">
+                        <img src="img/best3.jpeg" alt="Alumni 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="card-testimoni">
+                    <div class="image-testimoni">
+                        <img src="img/best4.png" alt="Alumni 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <div class="card-testimoni">
+                    <div class="image-testimoni">
+                        <img src="img/best5.png" alt="Alumni 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--PESAN-->
+<section id="pesan" class="pesan-harapan">
+    <div class="custom-container">
+        <h1><span class="custom-line"></span>PESAN BUAT KAMU<span class="custom-line"></span></h1>
+        <ul>
+            <li>
+                <input type="checkbox" id="message1">
+                <label for="message1">JAGA KESEHATAN</label>
+            </li>
+            <li>
+                <input type="checkbox" id="message2">
+                <label for="message2">JANGAN KECAPEAN</label>
+            </li>
+            <li>
+                <input type="checkbox" id="message3">
+                <label for="message3">TETAP SEMANGAT</label>
+            </li>
+            <li>
+                <input type="checkbox" id="message4">
+                <label for="message4">HARUS TETEP KEREN</label>
+            </li>
+            <li>
+                <input type="checkbox" id="message5">
+                <label for="message5">HARUS SEMAKIN BERANI</label>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="wishlist-container">
+        <h1><span class="custom-line"></span>WISHLIST<span class="custom-line"></span></h1>
+        <p>Tolong kamu bantu aku menuhin wishlist ini</p>
+        <ul>
+            <li>
+                <div class="custom-checkbox disabled"></div>
+                <label for="item1">DI FOLLBACK (Tercapai)</label>
+            </li>
+            <li>
+                <div class="custom-checkbox disabled"></div>
+                <label for="item2">DI NOTICE  (Tercapai)</label>
+            </li>
+            <li>
+                <div class="custom-checkbox disabled"></div>
+                <label for="item3">DM-AN (Tercapai)</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item4">
+                <label for="item4">NOMOR WHATSAPP KAMU</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">NGOBROL SAMA KAMU</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">BELAJAR BARENG KAMU</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">BACA BUKU BARENG KAMU</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">DISUKAIN BALIK</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">KAMU NERIMA AKU</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">KITA PUNYA HUBUNGAN</label>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+<!--PENUTUP-->
+<section id="penutup" class="birthday-background">
+    <div class="birthday-title-wrapper">
+        <h1>PENUTUP</h1>
+    </div>
+
+    <div class="birthday-text-description">
+        <p>Hi Aul,</p>
+        <p>Di sini aku mau minta maaf terlebih dahulu tapi aku bukan mau minta maaf karna aku udah suka sama kamu karna hal itu udah kamu maafin kan?. Di sini aku mau minta maaf karna aku udah berani nyuri foto-foto kamu buat hal bodoh ini,gapapa kalau kamu nganggap aku orang yang paling lancang,paling gasopan,orang ga beradab,gatau malu dan lain sebagainya juga gapapa ya karna kalau kamu nganggap aku seperti itu ya memang bener aku orangnya seperti itu jadi kamu bebas mandang aku seperti apa.</p>
+        <br>
+        <p>Langsung ke intinya aja,aku masih suka sama kamu. Ini beneran kamu gasalah baca,aku masih punya rasa suka ke kamu,aku gabisa mencari orang yang bisa aku anggap sebagai rumah sesuai dengan perintah kamu ke aku waktu itu. Awalnya aku kira setelah kamu nolak aku itu bakal ngebuat perasaan aku ke kamu itu hilang,tapi nyatanya enggak sama sekali,malahan aku ngerasa kalau perasaan aku ke kamu itu makin bertambah,aku ngerasa aneh,padahal kita ketemu saja jarang,kita berinteraksi juga gapernah,kenal aja cuman sebatas tau nama dan jurusannya saja tapi kenapa aku bisa punya perasaan sama kamu? aku pusing mikirin alasan dan asal mulanya kenapa aku bisa suka sama kamu. Teman aku bilang mungkin perasaan aku ke kamu ini cuman perasaan sekilas saja jadi dia bilang ke aku buat nunggu 1 bulan pasti bakal hilang perasaannya,tapi setelah 1 bulan aku nunggu ternyata perasaan aku ke kamu masih ada dan aku ngerasa malahan perasaan aku ke kamu itu semakin kuat jadinya teman aku bilang buat nunggu 1 bulan lagi agar perasaan aku ke kamu itu hilang. Dan benar aja sesuai dengan perkiraan aku,perasaan aku ke kamu itu masih sama,2 bulan aku nunggu perasaan aku ke kamu ilang tapi tetap saja tidak menghilang,lalu di bulan ke-3 perasaan aku masih ada tapi udah lumayan samar-samar karna aku selalu mikir kalau kamu itu udah punya pacar tanpa sepengetahuan aku,aku suka mikir kalau kamu punya seseorang yang lagi kamu kagumin dan kamu suka untuk sekarang ini,atau mungkin juga kamu sama cintanya kamu itu udah balikan dan makin bahagia,itu sih yang aku pikirin di bulan ke-3 ini dan pemikiran itu agak membuat aku terganggu soalnya aku takut kalau pemikiran aku itu salah dan lebih takut juga kalau pemikiran aku benar adanya.Tapi jujur fell in love sama kamu itu yang paling seru sih,gatau juga alasannya kenapa jujur emang seru aja.</p>
+        <br>
+   <p>Semoga ini menjadi yang terakhir aku ngungkapin perasaan aku ke kamu,entah ditolak atau diterima aku udah agak ga peduli soal itu dan jujur aku baru pertama kali ngelakuin hal senekat dan segila ini ke cewek,pasti sehabis aku ngirim ini ke kamu aku bakal selalu berusaha buat ngehindarin kamu gimanapun caranya,soalnya malu banget,bersyukur dan terima kasih karna kamu udah ngebuat aku ngerasain tau malu lagi dan doain aku semoga kedepannya aku semakin tau malu dan enggak malu-maluin, Amiin.  Sehabis kamu nolak aku,kamu jangan lupa berdoa yah supaya perasaan aku ke kamu cepet ilang dan semoga juga aku gabakal suka sama kamu lagi di kesempatan manapun.</p>
+    </div>
+    <br>
+    <a href="kue.html" class="btn get-started">Klik Tombol Ini</a>
+</section>
+
+<!--CONTACT-->
+<section id="contact" class="contact-section">
+    <h2>CONTACT</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-box">
+                <h3>Address</h3>
+                <p>Kecamatan Lumbung, Kabupaten Ciamis, Jawa Barat, Indonesia.</p>
+            </div>
+            <div class="info-box">
+                <h3>Call Us</h3>
+                <p>+6285795268224</p>
+            </div>
+            <div class="info-box">
+                <h3>Email Us</h3>
+                <p>dimasadt300@gmail.com</p>
+            </div>
+            </div>
+        <div class="contact-form">
+          <form action="send_message.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+    </div>
+  </section>
+  
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

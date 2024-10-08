@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 200, 245);
+}
+
+.cake-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+/* Kue */
+.cake {
+    position: relative;
+    width: 150px;
+    height: 250px; /* Tinggi total kue */
+    transform: translateY(100%);
+    animation: stackCake 1s ease-in-out forwards;
+}
+
+.cake.left {
+    animation-delay: 0.2s;
+}
+
+.cake.center {
+    animation-delay: 0.4s;
+}
+
+.cake.right {
+    animation-delay: 0.6s;
+}
+
+/* Lapisan Kue */
+.cake-body {
+    position: relative;
+    width: 100%;
+    height: 80%; /* 80% untuk body kue */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Lapisan Kue */
+.cake-layer {
+    width: 100%;
+    border-radius: 10px; /* Menambahkan sudut melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Lapisan teratas */
+.cake-layer.top {
+    height: 35%; /* Tinggi 35% */
+    background-color: #ff007f; /* Warna pink cerah */
+}
+
+/* Lapisan tengah */
+.cake-layer.middle {
+    height: 30%; /* Tinggi 30% */
+    background-color: #ff6f61; /* Warna oranye */
+}
+
+/* Lapisan terbawah */
+.cake-layer.bottom {
+    height: 35%; /* Tinggi 35% */
+    background-color: #ff9c00; /* Warna kuning */
+}
+
+/* Bagian atas kue */
+.cake-top {
+    width: 100px;
+    height: 50px;
+    background: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lilin */
+.candles {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    position: relative;
+    top: -25px;
+    left: 10px;
+}
+
+.candle {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.candle::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+/* Bunga */
+.flowers {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: -80px;
+    background: url('img/bunga.png') no-repeat center;
+    background-size: contain;
+    opacity: 0;
+    animation: showFlowers 1.5s ease-in-out forwards;
+}
+
+.left-flowers {
+    animation-delay: 1s;
+}
+
+.right-flowers {
+    left: auto;
+    right: -80px;
+    animation-delay: 1.2s;
+}
+
+@keyframes stackCake {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes showFlowers {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Agar tidak mengganggu interaksi dengan elemen lain */
+    z-index: 1; /* Pastikan canvas berada di belakang */
+}
+
+.cake-container {
+    position: relative; /* Ubah menjadi relative */
+    z-index: 2; /* Kue di atas canvas */
+}
+
+
+/* Media Query untuk Responsivitas */
+@media (max-width: 768px) {
+    .cake-container {
+        justify-content: space-around; /* Tetap berjajar ke samping */
+    }
+
+    .cake {
+        width: 100px; /* Lebar kue lebih kecil untuk mobile */
+        height: 200px; /* Tinggi total kue */
+    }
+
+    .cake-layer {
+        border-radius: 8px; /* Sesuaikan radius untuk tampilan lebih baik */
+    }
+
+    .cake-top {
+        width: 70px; /* Lebar bagian atas kue lebih kecil */
+        height: 35px; /* Sesuaikan tinggi bagian atas */
+        top: -20px; /* Sesuaikan posisi atas */
+        left: 15px; /* Sesuaikan posisi kiri */
+    }
+
+    .candles {
+        width: 50px; /* Sesuaikan lebar lilin */
+    }
+
+    .candle {
+        height: 30px; /* Tinggi lilin lebih pendek */
+    }
+
+    .flowers {
+        width: 40px; /* Lebar bunga lebih kecil */
+        height: 40px; /* Tinggi bunga lebih kecil */
+        top: 40%; /* Posisi bunga lebih sesuai */
+        left: -60px; /* Sesuaikan posisi kiri */
+    }
+
+    .right-flowers {
+        right: -60px; /* Posisi bunga kanan lebih sesuai */
+        left: auto; /* Menghilangkan left untuk menjaga konsistensi */
+    }
+
+    /* Hapus bunga tengah pada mode mobile */
+    .flowers.center {
+        display: none; /* Sembunyikan bunga tengah */
+    }
+}

@@ -1,0 +1,127 @@
+/* Kontak Section */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(255, 200, 245);
+    margin-left: calc(-50vw + 50%);
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+    border-bottom: 4px solid #ff00c3;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Flex container untuk contact */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-box {
+    background-color: #ff53d7;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.info-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: black;
+}
+
+.contact-form {
+    background-color: #ff53d7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #d325ab;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(166, 7, 140);
+}
+
+/* Tambahkan Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elemen secara vertikal */
+        align-items: center;
+        gap: 30px; /* Kurangi gap antar elemen */
+    }
+
+    .info-box, .contact-form {
+        width: 90%; /* Sesuaikan lebar box agar lebih kecil pada layar mobile */
+    }
+
+    .contact-section h2 {
+        font-size: 28px; /* Kecilkan ukuran font pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px; /* Kurangi padding untuk tampilan yang lebih kecil */
+    }
+
+    .contact-section h2 {
+        font-size: 24px; /* Lebih kecil lagi untuk layar yang lebih kecil */
+    }
+
+    .contact-container {
+        gap: 20px;
+    }
+
+    .info-box, .contact-form {
+        width: 100%; /* Maksimalkan lebar pada layar kecil */
+    }
+
+    .contact-form button {
+        font-size: 16px; /* Sesuaikan ukuran font pada tombol */
+    }
+}

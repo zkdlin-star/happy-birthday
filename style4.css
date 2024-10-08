@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.pesan-harapan {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+/* Kontainer utama */
+.custom-container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.custom-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.custom-line {
+   top: 50%;
+   width: 50px;
+   height: 3px;
+   background-color: #ff00c3;
+   margin: 0 10px;
+}
+
+.custom-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List items */
+.custom-container li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.custom-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    accent-color: rgb(255, 200, 245);
+}
+
+.custom-container label {
+    font-size: 18px;
+}
+
+/* Menambahkan padding untuk ul li */
+.custom-container ul li {
+    padding-left: 10%;
+}
+
+/* Responsive untuk layar handphone */
+@media (max-width: 768px) {
+    .custom-container {
+        width: 90%; /* Mengubah lebar kontainer agar lebih sesuai di layar kecil */
+        margin: 30px auto;
+    }
+
+    .custom-container h1 {
+        font-size: 20px; /* Mengubah ukuran font untuk lebih sesuai di layar kecil */
+    }
+
+    .custom-line {
+        width: 40px; /* Menyesuaikan lebar garis untuk layar lebih kecil */
+        margin: 0 5px;
+    }
+
+    .custom-container input[type="checkbox"] {
+        width: 18px;
+        height: 18px; /* Mengurangi ukuran checkbox */
+        margin-right: 10px;
+    }
+
+    .custom-container label {
+        font-size: 16px; /* Mengurangi ukuran teks label */
+    }
+
+    .custom-container ul li {
+        padding-left: 5%; /* Mengurangi padding kiri untuk elemen daftar */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-container h1 {
+        font-size: 18px; /* Mengubah ukuran font lebih kecil untuk layar sangat kecil */
+    }
+
+    .custom-line {
+        width: 30px; /* Lebih kecil untuk layar sangat kecil */
+    }
+
+    .custom-container input[type="checkbox"] {
+        width: 16px;
+        height: 16px; /* Menyesuaikan ukuran checkbox lebih kecil */
+    }
+
+    .custom-container label {
+        font-size: 14px; /* Mengubah ukuran teks label lebih kecil */
+    }
+
+    .custom-container ul li {
+        padding-left: 2%; /* Mengurangi padding kiri untuk layar sangat kecil */
+    }
+}
+
+
+
+
+
+
+/* Wishlist Section */
+.wishlist-container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.wishlist-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.wishlist-line {
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #ff00c3;
+    margin: 0 10px;
+}
+
+.wishlist-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wishlist-container li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Checkbox Styling */
+.wishlist-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    appearance: none;
+    border: 2px solid #d5d5d5;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.wishlist-container input[type="checkbox"]:checked {
+    background-color: rgb(255, 200, 245);
+    border: 2px solid #d5d5d5;
+}
+
+.wishlist-container input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+
+/* Checkbox Tercapai yang Tidak Bisa Dicentang */
+.wishlist-container .custom-checkbox.disabled {
+    background-color: rgb(255, 200, 245);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.wishlist-container .custom-checkbox.disabled::after {
+    content: '✔';
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+
+.wishlist-container label {
+    font-size: 18px;
+}
+
+.wishlist-container ul li {
+    padding-left: 10%;
+}
+
+/* Responsive untuk layar handphone dan tablet */
+@media (max-width: 768px) {
+    .wishlist-container {
+        width: 90%; /* Lebih fleksibel pada layar kecil */
+        margin: 30px auto;
+    }
+
+    .wishlist-container h1 {
+        font-size: 20px; /* Ukuran font lebih kecil */
+    }
+
+    .wishlist-line {
+        width: 40px; /* Garis lebih kecil */
+        margin: 0 5px;
+    }
+
+    .wishlist-container input[type="checkbox"] {
+        width: 18px;
+        height: 18px; /* Ukuran checkbox lebih kecil */
+        margin-right: 10px;
+    }
+
+    .wishlist-container label {
+        font-size: 16px; /* Ukuran teks lebih kecil */
+    }
+
+    .wishlist-container ul li {
+        padding-left: 5%; /* Padding lebih kecil untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .wishlist-container h1 {
+        font-size: 18px; /* Ukuran font lebih kecil untuk layar sangat kecil */
+    }
+
+    .wishlist-line {
+        width: 30px; /* Garis lebih kecil */
+    }
+
+    .wishlist-container input[type="checkbox"] {
+        width: 16px;
+        height: 16px; /* Ukuran checkbox lebih kecil */
+    }
+
+    .wishlist-container label {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    .wishlist-container ul li {
+        padding-left: 2%; /* Padding lebih kecil untuk layar sangat kecil */
+    }
+}
